@@ -3,6 +3,6 @@
     public class EntityBase<T>
     {
         public T? Identificador { get; set; }
-        public DateTime FechaDeCreacion { get; set; }
+        public DateTime FechaCreacion { get; set; }
     }
 }

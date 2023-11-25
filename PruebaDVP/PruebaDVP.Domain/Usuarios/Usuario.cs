@@ -1,10 +1,11 @@
 ﻿using PruebaDVP.Domain.Common;
+using PruebaDVP.Domain.Personas;
 
 namespace PruebaDVP.Domain.Usuarios
 {
-    public class Usuario :EntityBase<Guid>
+    public class Usuario :EntityBase<string>
     {
-        public string? User { get; set; }
+        public string? NombreUsuario { get; set; }
         public string? Pass { get; set; }
     }
 }
