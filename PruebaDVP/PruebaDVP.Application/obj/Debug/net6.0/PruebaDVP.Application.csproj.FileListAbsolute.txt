@@ -1,0 +1,16 @@
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\bin\Debug\net6.0\PruebaDVP.Application.deps.json
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\bin\Debug\net6.0\PruebaDVP.Application.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\bin\Debug\net6.0\PruebaDVP.Application.pdb
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\bin\Debug\net6.0\PruebaDVP.Domain.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\bin\Debug\net6.0\PruebaDVP.Domain.pdb
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.csproj.AssemblyReference.cache
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.AssemblyInfoInputs.cache
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.AssemblyInfo.cs
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.sourcelink.json
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.csproj.CopyComplete
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\refint\PruebaDVP.Application.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\PruebaDVP.Application.pdb
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Application\obj\Debug\net6.0\ref\PruebaDVP.Application.dll

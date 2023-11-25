@@ -1,0 +1,12 @@
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\bin\Debug\net6.0\PruebaDVP.Domain.deps.json
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\bin\Debug\net6.0\PruebaDVP.Domain.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\bin\Debug\net6.0\PruebaDVP.Domain.pdb
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.AssemblyInfoInputs.cache
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.AssemblyInfo.cs
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.sourcelink.json
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\refint\PruebaDVP.Domain.dll
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\PruebaDVP.Domain.pdb
+C:\Users\usuario\Projects\PruebaDVP\PruebaDVP\PruebaDVP.Domain\obj\Debug\net6.0\ref\PruebaDVP.Domain.dll
