@@ -28,7 +28,7 @@ export class UserEffects{
             ofType(fromActions.Types.SIGN_UP_NOMBREUSUARIO),
             map((action: fromActions.SignUpNombreUsuario)=> action.user),
             switchMap( userData => 
-                    this.httpClient.post<UsuarioResponse>(`${environment.url}api/Usuario/registra`, userData)
+                    this.httpClient.post<UsuarioResponse>(`${environment.url}api/Usuario/Registrar`, userData)
                     .pipe(
                         tap((response: UsuarioResponse) => {
                             localStorage.setItem('token', response.token);
@@ -54,9 +54,11 @@ export class UserEffects{
                         tap((response: UsuarioResponse) => {
                             localStorage.setItem('token', response.token);
                             this.router.navigate(['/']);
+                            
                         }), 
                         map((response : UsuarioResponse)=> new fromActions.SingInNombreUsuarioSuccess(response.nombreUsuario, response || null)),
                         catchError(err =>{
+                            console.log(userData);
                             this.notification.error("Las Credenciales son incorrectas");
                             return of(new fromActions.SingInNombreUsuarioError(err.message));
                         })

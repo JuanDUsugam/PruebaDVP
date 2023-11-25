@@ -23,10 +23,10 @@ export class LoginComponent implements OnInit{
 
   loginUsuario(form: NgForm){
     const userLoginRequest : fromUser.NombreUsuarioPasswordCredentials ={
-      email: form.value.email,
+      nombreUsuario: form.value.nombreUsuario,
       password: form.value.password
     }
-
+    
     this.store.dispatch(new fromUser.SingInNombreUsuario(userLoginRequest));
   }
 

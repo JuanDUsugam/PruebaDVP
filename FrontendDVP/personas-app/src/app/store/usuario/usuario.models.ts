@@ -4,7 +4,7 @@ export { Usuario as UsuarioResponse} from '@app/models/backend/usuario';
 
 
 export interface NombreUsuarioPasswordCredentials{
-    email: string;
+    nombreUsuario: string;
     password: string;
 }
 

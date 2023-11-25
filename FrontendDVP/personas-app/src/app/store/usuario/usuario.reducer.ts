@@ -25,7 +25,7 @@ export function reducer(state = initialState, action : fromActions.All | any) : 
             return { ...state, loading: true};
         }
         case fromActions.Types.INIT_AUTHORIZED:{
-            return { ...state, loading: false, entity: action.user, nombreUsuario : action.NOMBREUSURIO, error: null};
+            return { ...state, loading: false, entity: action.user, nombreUsuario : action.user, error: null};
         }
         case fromActions.Types.INIT_UNAUTHORIZED:{
             return { ...state, loading: false, entity: null, nombreUsuario : null, error: null};
@@ -38,7 +38,7 @@ export function reducer(state = initialState, action : fromActions.All | any) : 
             return { ...state, loading: true, entity: null, nombreUsuario :null, error: null};
         }
         case fromActions.Types.SIGN_IN_NOMBREUSUARIO_SUCCESS:{
-            return { ...state, loading: false, entity: action.user, nombreUsuario :action.NOMBREUSURIO, error: null};
+            return { ...state, loading: false, entity: action.user, nombreUsuario :action.user, error: null};
         }
         case fromActions.Types.SIGN_IN_NOMBREUSUARIO_ERROR:{
             return { ...state, loading: false, entity: null, nombreUsuario :null, error: action.error};
@@ -48,7 +48,7 @@ export function reducer(state = initialState, action : fromActions.All | any) : 
             return { ...state, loading: true, entity: null, nombreUsuario :null, error: null};
         }
         case fromActions.Types.SIGN_UP_NOMBREUSUARIO_SUCCESS:{
-            return { ...state, loading: false, entity: action.user, nombreUsuario :action.NOMBREUSURIO, error: null};
+            return { ...state, loading: false, entity: action.user, nombreUsuario :action.user, error: null};
         }
         case fromActions.Types.SIGN_UP_NOMBREUSUARIO_ERROR:{
             return { ...state, loading: false, entity: null, nombreUsuario :null, error: action.error};

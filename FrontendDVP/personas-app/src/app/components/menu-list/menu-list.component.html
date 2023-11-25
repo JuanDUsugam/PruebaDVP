@@ -11,17 +11,13 @@
         <mat-icon>how_to_register</mat-icon>
         <span class="navegation-list-label">Registrar</span>
     </a>
-    <a *ngIf="isAuthorized" mat-list-item (click)="closeMenu()">
-        <mat-icon>contact_support</mat-icon>
-        <span class="navegation-list-label">Contacto</span>
-    </a>
-    <a *ngIf="isAuthorized" mat-list-item (click)="closeMenu()" routerLink="inmueble/nuevo">
+    <a *ngIf="isAuthorized" mat-list-item (click)="closeMenu()" routerLink="persona/nuevo">
         <mat-icon>add</mat-icon>
-        <span class="navegation-list-label">Nuevo Inmueble</span>
+        <span class="navegation-list-label">Nueva Persona</span>
     </a>
-    <a *ngIf="isAuthorized" mat-list-item (click)="closeMenu()" routerLink="inmueble/list">
+    <a *ngIf="isAuthorized" mat-list-item (click)="closeMenu()" routerLink="persona/list">
         <mat-icon>add</mat-icon>
-        <span class="navegation-list-label">Inmuebles</span>
+        <span class="navegation-list-label">Personas</span>
     </a>
     <a *ngIf="isAuthorized" mat-list-item (click)="onSingOut()" (click)="closeMenu()">
         <mat-icon>logout</mat-icon>
