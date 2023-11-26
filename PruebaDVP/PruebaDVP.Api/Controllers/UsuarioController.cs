@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PruebaDVP.Application.Features.Personas.Queries.Dtos;
+using PruebaDVP.Application.Features.Usuarios.Commands.CreateUsuario;
 using PruebaDVP.Application.Features.Usuarios.Commands.LoginUsuario;
 using PruebaDVP.Application.Features.Usuarios.Queries.Dtos;
 using PruebaDVP.Application.Features.Usuarios.Queries.GetUsuarioById;
@@ -32,6 +33,14 @@ namespace PruebaDVP.Api.Controllers
         [HttpPost("Login", Name ="Login")]
         [ProducesResponseType(typeof(UsuarioLoginResponseDto), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<UsuarioLoginResponseDto>> Login([FromBody] LoginUsurioCommand command)
+        {
+            return await _mediator.Send(command);
+        }
+
+        [AllowAnonymous]
+        [HttpPost("Registrar", Name = "Registrar")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<ActionResult<UsuarioLoginResponseDto>> Registrar([FromBody] CreateUsuarioCommand command)
         {
             return await _mediator.Send(command);
         }

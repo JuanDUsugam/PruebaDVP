@@ -26,9 +26,11 @@ namespace PruebaDVP.Application.Mappings
             CreateMap<UpdateUsuarioCommand, Usuario>()
                 .ForMember(dest => dest.Identificador, opts => opts.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Pass, opts => opts.MapFrom(src => src.Password));
+            CreateMap<CreateUsuarioCommand, Usuario>()
+                .ForMember(dest => dest.Pass, opts => opts.MapFrom(src => src.Password));
 
             CreateMap<CreatePersonaCommand, Persona>();
-            CreateMap<CreateUsuarioCommand, Usuario>();
+            
         }
     }
 }

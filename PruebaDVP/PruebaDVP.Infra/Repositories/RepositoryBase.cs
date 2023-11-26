@@ -19,7 +19,6 @@ namespace PruebaDVP.Infra.Repositories
         public async Task<T> CreateAsync(T entity)
         {
             _appDbContext.Set<T>().Add(entity);
-            await _appDbContext.SaveChangesAsync();
             return entity;
         }
 
