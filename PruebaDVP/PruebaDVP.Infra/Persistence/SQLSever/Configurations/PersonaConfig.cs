@@ -13,7 +13,7 @@ namespace PruebaDVP.Infra.Persistence.SQLSever.Configurations
             builder.Property(p => p.NumeroIdentificacion);
             builder.Property(p => p.Email).HasMaxLength(30);
             builder.Property(p => p.TipoIdentificacion).HasMaxLength(15);
-            builder.HasOne(P => P.Usuario).WithOne();
+            builder.HasOne(P => P.Usuario).WithOne().IsRequired(false);
         }   
     }
 }

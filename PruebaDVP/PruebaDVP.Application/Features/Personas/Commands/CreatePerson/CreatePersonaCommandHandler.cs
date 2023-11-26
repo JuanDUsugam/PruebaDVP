@@ -19,6 +19,7 @@ namespace PruebaDVP.Application.Features.Personas.Commands.CreatePerson
         public async Task<string> Handle(CreatePersonaCommand request, CancellationToken cancellationToken)
         {
             var personaEntity = _mapper.Map<Persona>(request);
+            personaEntity.Identificador = Guid.NewGuid().ToString();
 
             await _unitOfWork.Repository<Persona>().CreateAsync(personaEntity);
 
