@@ -6,6 +6,10 @@ const routes: Routes = [
     path:'',
     children:[
       {
+        path:'persona',
+        loadChildren: () => import('./pages/personas/personas.module').then(m => m.PersonasModule)
+      },
+      {
         path: 'auth',
         loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
       },

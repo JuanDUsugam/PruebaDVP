@@ -44,7 +44,7 @@ app.UseHttpsRedirection();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseCors("CorePolicy");
+app.UseCors("CorsPolicy");
 app.MapControllers();
 
 using(var scoped = app.Services.CreateScope())

@@ -10,5 +10,6 @@ namespace PruebaDVP.Application.Interfaces.Infrastructure.Repositories
         Task DeleteAsync(TEntity entity);
         Task <TEntity> GetByWithSpec(ISpecification<TEntity> spec);
         Task<TEntity> GetByWithSpec(Expression<Func<TEntity, bool>> predicate, List<Expression<Func<TEntity, object>>> includes);
+        Task<List<TEntity>> GetAll();
     }
 }

@@ -1,0 +1,38 @@
+<app-spinner *ngIf="loading$ | async"></app-spinner>
+
+<mat-toolbar color="secondary">
+    <span>Registra Nueva Persona</span>
+</mat-toolbar>
+
+<section fxLayoutAlign="center">
+    <mat-card>
+        <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="registrarPersona(f)" fxLayoutGap="10px">
+            <mat-form-field>
+                <mat-label>Ingrese Nombres</mat-label>
+                <input type="text" ngModel name="nombres" required placeholder="Ingrese Nombres" matInput/>
+                <mat-error>Debe ingresar un nombres</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Ingrese Apellidos</mat-label>
+                <input type="text" ngModel name="apellidos" required placeholder="Ingrese Apellidos" matInput/>
+                <mat-error>Debe ingresar una apellidos</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Ingrese el numero de Identificación</mat-label>
+                <input type="text" ngModel name="numeroIdentificacion" required placeholder="Ingrese numero de identificación" matInput/>
+                <mat-error>Debe ingresar un numero de identificación</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Ingrese email</mat-label>
+                <input type="text" ngModel name="email" required placeholder="Ingrese correo electronico" matInput/>
+                <mat-error>Debe ingresar un email</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Ingrese tipo de Identificacion</mat-label>
+                <input type="text" ngModel name="tipoIdentificacion" required placeholder="Ingrese tipo de Identificacion" matInput/>
+                <mat-error>Debe ingresar un tipo de Identificacion</mat-error>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Guardar Persona</button>
+        </form>
+    </mat-card>
+</section>

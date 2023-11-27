@@ -1,0 +1,41 @@
+
+<h1>Listado de Personas</h1>
+<hr>
+
+
+
+
+
+<table *ngIf=" personas$ | async as personas "
+       class="table table-secondary mt-5 ">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Numero Identificacion</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas;">
+      <td>{{persona.id}}</td>
+      <td>{{ persona.nombres }}</td>
+      <td>{{ persona.apellidos }}</td>
+      <td>
+        {{persona.numeroIdentificacion}}
+      </td>
+      <td>{{persona.email}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<div *ngIf="loading$ | async">
+  <!--<h4 class="alert-heading">Cargando</h4>-->
+  
+  <p class="mb-0">
+    Espere por favor
+  </p>
+</div>

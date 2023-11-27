@@ -27,6 +27,11 @@ namespace PruebaDVP.Infra.Repositories
              _appDbContext.Set<T>().Remove(entity);
         }
 
+        public async Task<List<T>> GetAll()
+        {
+           return await _appDbContext.Set<T>().ToListAsync();
+        }
+
         public async Task<T> GetByWithSpec(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).FirstOrDefaultAsync();

@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PruebaDVP.Application.Features.Personas.Commands.CreatePerson;
 using PruebaDVP.Application.Features.Personas.Commands.DeletePersona;
 using PruebaDVP.Application.Features.Personas.Commands.UpdatePersona;
 using PruebaDVP.Application.Features.Personas.Queries.Dtos;
+using PruebaDVP.Application.Features.Personas.Queries.GetAllPersonas;
 using PruebaDVP.Application.Features.Personas.Queries.GetPersonaById;
 using System.Net;
 
@@ -20,6 +22,13 @@ namespace PruebaDVP.Api.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<List<PersonaResponseQuery>>> GetAll()
+        {
+            var query = new GetAllPersonasQuery();
+            return Ok(await _mediator.Send(query));
+        }
+
         [HttpGet("ById/{id}", Name ="GetPersonaById")]
         [ProducesResponseType(typeof(PersonaResponseQuery), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<PersonaResponseQuery>> GetPersonaById(string id)
@@ -28,7 +37,8 @@ namespace PruebaDVP.Api.Controllers
             return Ok(await _mediator.Send(personaQuery));
         }
 
-        [HttpPost]
+        
+        [HttpPost("Crear")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<string>> CreatePersona([FromBody] CreatePersonaCommand command)
         {
